@@ -1,4 +1,4 @@
-package com.generation.SpringSecurityJWT.model;
+package com.generation.restcontroller.model;
 
 import javax.persistence.*;
 import java.util.List;

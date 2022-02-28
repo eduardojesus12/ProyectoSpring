@@ -1,7 +1,6 @@
-package com.generation.SpringSecurityJWT.service;
+package com.generation.restcontroller.service;
 
-import com.generation.SpringSecurityJWT.model.Post;
-import com.generation.SpringSecurityJWT.model.User;
+import com.generation.restcontroller.model.Post;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,5 +16,4 @@ public interface PostService {
 
     void delete(Long id);
 
-    List<Post> findByUserId(Long id);
 }

@@ -1,9 +1,7 @@
-package com.generation.SpringSecurityJWT.service;
+package com.generation.restcontroller.service;
 
-import com.generation.SpringSecurityJWT.model.Post;
-import com.generation.SpringSecurityJWT.model.User;
-import com.generation.SpringSecurityJWT.repository.PostRepository;
-import javafx.geometry.Pos;
+import com.generation.restcontroller.model.Post;
+import com.generation.restcontroller.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -39,9 +37,5 @@ public class PostServiceImpl implements PostService {
         postRepository.deleteById(id);
     }
 
-    @Override
-    public List<Post> findByUserId(Long id) {
-        return postRepository.findByUserId(id);
-    }
 
 }

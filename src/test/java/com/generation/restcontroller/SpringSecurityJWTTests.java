@@ -1,4 +1,4 @@
-package com.generation.SpringSecurityJWT;
+package com.generation.restcontroller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

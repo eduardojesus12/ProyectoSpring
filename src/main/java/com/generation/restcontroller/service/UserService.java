@@ -1,6 +1,6 @@
-package com.generation.SpringSecurityJWT.service;
+package com.generation.restcontroller.service;
 
-import com.generation.SpringSecurityJWT.model.User;
+import com.generation.restcontroller.model.User;
 
 import java.util.List;
 

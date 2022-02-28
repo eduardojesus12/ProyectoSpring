@@ -1,4 +1,4 @@
-package com.generation.SpringSecurityJWT.model;
+package com.generation.restcontroller.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;

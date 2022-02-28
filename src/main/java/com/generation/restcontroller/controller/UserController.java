@@ -1,12 +1,10 @@
-package com.generation.SpringSecurityJWT.controller;
+package com.generation.restcontroller.controller;
 
-import com.generation.SpringSecurityJWT.model.User;
-import com.generation.SpringSecurityJWT.service.UserService;
+import com.generation.restcontroller.model.User;
+import com.generation.restcontroller.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Entity;
 import java.util.ArrayList;
 
 @RestController
@@ -14,16 +12,13 @@ import java.util.ArrayList;
 public class UserController {
 
     private final UserService userService;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public UserController(@Autowired UserService userService,@Autowired BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public UserController(@Autowired UserService userService) {
         this.userService = userService;
-        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
     @PostMapping
     public User saveUser(@RequestBody User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         return userService.save(user);
     }
 
