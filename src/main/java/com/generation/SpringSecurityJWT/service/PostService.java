@@ -1,7 +1,6 @@
 package com.generation.SpringSecurityJWT.service;
 
 import com.generation.SpringSecurityJWT.model.Post;
-import com.generation.SpringSecurityJWT.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

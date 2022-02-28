@@ -2,6 +2,7 @@ package com.generation.SpringSecurityJWT.service;
 
 import com.generation.SpringSecurityJWT.model.User;
 import com.generation.SpringSecurityJWT.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -17,7 +18,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     private final UserRepository userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(@Autowired UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

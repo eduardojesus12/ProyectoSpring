@@ -1,9 +1,8 @@
 package com.generation.SpringSecurityJWT.service;
 
 import com.generation.SpringSecurityJWT.model.Post;
-import com.generation.SpringSecurityJWT.model.User;
 import com.generation.SpringSecurityJWT.repository.PostRepository;
-import javafx.geometry.Pos;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public class PostServiceImpl implements PostService {
 
     private final PostRepository postRepository;
 
-    public PostServiceImpl(PostRepository postRepository) {
+    public PostServiceImpl(@Autowired PostRepository postRepository) {
         this.postRepository = postRepository;
     }
 

@@ -21,7 +21,7 @@ class UserControllerTest {
 
         User user = new User();
         user.setName("Carlos Eduardo");
-        user.setEmail("carlos@hotmail.com");
+        user.setUsername("carlos@hotmail.com");
         user.setPassword("12345678");
 
         when(userService.save(any(User.class))).thenReturn(user);
@@ -46,7 +46,7 @@ class UserControllerTest {
 
         User user = new User();
         user.setName("Carlos Eduardo");
-        user.setEmail("carlos@hotmail.com");
+        user.setUsername("carlos@hotmail.com");
         user.setPassword("12345678");
         user.setId(1L);
 

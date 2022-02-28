@@ -1,7 +1,6 @@
 package com.generation.SpringSecurityJWT.controller;
 
 import com.generation.SpringSecurityJWT.model.Post;
-import com.generation.SpringSecurityJWT.repository.PostRepository;
 import com.generation.SpringSecurityJWT.service.PostService;
 import org.springframework.web.bind.annotation.*;
 
